@@ -1,0 +1,40 @@
+.page-header {
+  background-color: #0266c1;
+  padding: 15px 0;
+}
+
+.page-header__burger {
+  border: none;
+  background-color: transparent;
+  background-image: url("/__spritemap#sprite-menu-view");
+  width: 26px;
+  height: 26px;
+  grid-area: burger;
+}
+
+.page-header__navigation {
+  display: none;
+}
+
+.page-header__phone {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 14px;
+  margin-bottom: 0;
+  grid-area: phone;
+  text-align: right;
+}
+
+.page-header__logo-wrapper {
+  grid-area: logo;
+}
+
+.page-header__container {
+  display: grid;
+  grid-template-columns: 1fr 142px;
+  grid-template-areas:
+    "burger logo"
+    ".      phone";
+}

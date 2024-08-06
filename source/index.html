@@ -10,12 +10,36 @@
 
   <body class="page-body">
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
+    <div data-test="header">
+      <header class="page-header">
+        <div class="container page-header__container">
+          <button class="page-header__burger" type="button">
+            <span class="visually-hidden">Бургер меню</span>
+          </button>
+          <div class="page-header__logo-wrapper">
+            <img width="142" height="42" src="/__spritemap#sprite-logo-view" alt="Логотип">
+          </div>
+          <nav class="page-header__navigation">
+            <ul class="page-header__list">
+              <li class="page-header__item">Туры</li>
+              <li class="page-header__item">Обучение</li>
+              <li class="page-header__item">О нас</li>
+              <li class="page-header__item">Отзывы</li>
+              <li class="page-header__item">Фотографии</li>
+              <li class="page-header__item">Контакты</li>
+            </ul>
+          </nav>
+          <p class="page-header__phone">
+            8 800 000-00-00
+          </p>
+        </div>
+      </header>
+    </div>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
     <div data-test="training">training</div>
