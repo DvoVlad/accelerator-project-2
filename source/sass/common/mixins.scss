@@ -25,3 +25,9 @@
     @content;
   }
 }
+
+@mixin media-only-tablet {
+  @media (min-width: $tablet-width) and (max-width: ($desctop-width - 1)) {
+    @content;
+  }
+}
