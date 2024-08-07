@@ -119,12 +119,16 @@
     padding: 15px 15px 50px;
     gap: 22px;
     flex-direction: column;
+    width: 290px;
+    margin: 0 auto;
   }
 
   @include media-only-tablet {
     padding: 30px 45px 70px;
     gap: 26px;
     flex-direction: column;
+    width: 708px;
+    margin: 0 auto;
   }
 }
 
