@@ -17,7 +17,7 @@
   grid-area: burger;
   cursor: pointer;
 
-  @include media-desctop {
+  @include media-desktop {
     display: none;
   }
 }
@@ -29,7 +29,7 @@
 .page-header__navigation {
   display: none;
 
-  @include media-desctop {
+  @include media-desktop {
     display: block;
     grid-area: nav;
   }
@@ -70,6 +70,11 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  @include media-desktop {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .page-header__logo-wrapper {
@@ -97,7 +102,7 @@
     align-items: center;
   }
 
-  @include media-desctop {
+  @include media-desktop {
     grid-template-columns: 205px 838px 157px;
     grid-template-areas: "logo nav phone";
   }
@@ -109,7 +114,7 @@
   list-style: none;
   margin: 0;
 
-  @include media-desctop {
+  @include media-desktop {
     padding: 0;
     justify-content: center;
     gap: 30px;
@@ -136,7 +141,7 @@
   color: #ffffff;
   text-decoration: none;
 
-  @include media-desctop {
+  @include media-desktop {
     font-size: 16px;
     line-height: 16px;
   }

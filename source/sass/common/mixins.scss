@@ -14,7 +14,7 @@
   }
 }
 
-@mixin media-desctop {
+@mixin media-desktop {
   @media (min-width: $desctop-width) {
     @content;
   }

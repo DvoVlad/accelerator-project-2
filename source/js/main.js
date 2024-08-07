@@ -13,5 +13,6 @@ new Swiper('.hero__swiper', {
   // If we need pagination
   pagination: {
     el: '.hero__swiper-pagination',
+    clickable: true
   }
 });
