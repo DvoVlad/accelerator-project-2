@@ -1,16 +1,16 @@
 .hero__swiper {
   width: 320px;
-  height: 568px;
+  min-height: 568px;
   margin: 0 auto;
 
   @include media-tablet {
     width: 768px;
-    height: 1034px;
+    min-height: 1034px;
   }
 
   @include media-desktop {
     width: 1440px;
-    height: 800px;
+    min-height: 800px;
   }
 }
 
@@ -77,6 +77,16 @@
   }
 }
 
+.hero__text-wrapper--with-card {
+  @include media-tablet {
+    padding-top: 137px;
+  }
+
+  @include media-desktop {
+    padding-top: 200px;
+  }
+}
+
 .hero__text-wrapper h2 {
   margin-top: 0;
   margin-bottom: 15px;
@@ -92,20 +102,21 @@
   @include media-desktop {
     font-size: 77px;
     line-height: 77px;
-    width: 780px;
+    width: 944px;
   }
 }
 
 .hero__text-wrapper p {
   margin-top: 0;
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 15px;
   line-height: 20px;
+  width: 290px;
 
   @include media-tablet {
     margin-bottom: 35px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 17px;
     line-height: 24px;
     width: 500px;
@@ -113,7 +124,7 @@
 
   @include media-desktop {
     margin-left: 0;
-    width: 420px;
+    width: 464px;
   }
 }
 
@@ -139,9 +150,10 @@
   display: none;
 
   @include media-desktop {
+    position: absolute;
+    bottom: 80px;
     display: flex;
     gap: 10px;
-    margin-top: 134px;
   }
 }
 
@@ -169,4 +181,25 @@
   width: 12px;
   height: 12px;
   background-image: url("/__spritemap#sprite-level-view");
+}
+
+.hero__slide-card {
+  display: block;
+}
+
+.hero__card-wrapper {
+  display: none;
+
+  @include media-tablet {
+    display: block;
+    position: absolute;
+    bottom: 197px;
+    left: 163px;
+  }
+
+  @include media-desktop {
+    bottom: 154px;
+    right: 120px;
+    left: auto;
+  }
 }
