@@ -14,5 +14,25 @@ new Swiper('.hero__swiper', {
   pagination: {
     el: '.hero__swiper-pagination',
     clickable: true
-  }
+  },
+  breakpointsBase: 'container',
+  breakpoints: {
+    1440: {
+      allowTouchMove: false
+    }
+  },
+});
+
+new Swiper('.tours__swiper', {
+  // Navigation arrows
+  navigation: {
+    nextEl: '.tours__slider-next',
+    prevEl: '.tours__slider-prev',
+  },
+  breakpointsBase: 'container',
+  breakpoints: {
+    290: {
+      slidesPerView: 1
+    }
+  },
 });

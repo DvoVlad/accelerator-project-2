@@ -148,7 +148,53 @@
         </div>
       </section>
     </div>
-    <div data-test="tours">tours</div>
+    <div data-test="tours">
+      <section class="tours">
+        <div class="tours__title-wrapper">
+          <p class="tours__title-copy">
+            Ближайшие туры
+          </p>
+          <h2 class="tours__title">Ближайшие туры</h2>
+          <div class="tours__buttons-wrapper">
+            <button class="tours__slider-prev"></button>
+            <button class="tours__slider-next"></button>
+          </div>
+        </div>
+        <div class="swiper tours__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide tours__swiper-slide">
+              <div class="tours__picture-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" width="380" height="416" type="image/webp" srcset="./img/tour-desktop-1@1x.webp 1x, ./img/tour-desktop-1@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="380" height="416" type="image/jpg" srcset="./img/tour-desktop-1@1x.jpg 1x,
+                  ./img/tour-desktop-1@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="330" height="416" type="image/webp" srcset="./img/tour-tablet-1@1x.webp 1x, ./img/tour-tablet-1@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="330" height="416" type="image/jpg" srcset="./img/tour-tablet-1@1x.jpg 1x,
+                  ./img/tour-tablet-1@2x.jpg 2x">
+                  <source width="290" height="416" type="image/webp" srcset="./img/tour-mobile-1@1x.webp 1x,
+                  ./img/tour-mobile-1@2x.webp 2x">
+                  <img class="tours__slide-image" width="290" height="416" src="./img/tour-mobile-1@1x.jpg" alt="Слайд 1" srcset="./img/tour-mobile-1@1x.jpg 1x,
+                  ./img/tour-mobile-1@2x.jpg 2x">
+                </picture>
+              </div>
+              <div class="tours__overlay">
+                <div class="tours__info-wrapper">
+                  <div class="tours__place">Кавказ</div>
+                  <div class="tours__count-days">
+                    <div class="tours__day">4 дня</div>
+                    <div class="tours__night">3 ночи</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide tours__swiper-slide">Slide 2</div>
+            <div class="swiper-slide tours__swiper-slide">Slide 3</div>
+          </div>
+        </div>
+      </section>
+    </div>
     <div data-test="training">training</div>
     <div data-test="about">about</div>
     <div data-test="reviews">reviews</div>
