@@ -173,6 +173,7 @@
   width: 11px;
   height: 11px;
   background-image: url("/__spritemap#sprite-moon-view");
+  background-repeat: no-repeat;
 }
 
 .hero__info-label--level::before {
@@ -181,6 +182,7 @@
   width: 12px;
   height: 12px;
   background-image: url("/__spritemap#sprite-level-view");
+  background-repeat: no-repeat;
 }
 
 .hero__slide-card {
