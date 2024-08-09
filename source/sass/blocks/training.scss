@@ -1,0 +1,56 @@
+.training {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.training__title-wrapper {
+  width: 290px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.training__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  color: #2d383f;
+}
+
+.training__title-copy {
+  position: absolute;
+  top: 0;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2d383f;
+  opacity: 0.03;
+  margin: 0;
+}
+
+.training__text-wrapper {
+  width: 290px;
+  margin: 18px auto 15px;
+}
+
+.training__text-wrapper p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  color: #2d383f;
+}
+
+.training__second-title-wrapper {
+  margin: 0 auto;
+  width: 290px;
+}
+
+.training__second-title {
+  margin: 0;
+}
+
+.training__buttons-wrapper {
+  display: none;
+}
