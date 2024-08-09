@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import './menu';
 
 new Swiper('.hero__swiper', {
-  modules: [Navigation, Pagination],
+  modules: [Pagination],
   // Optional parameters
   loop: true,
 
@@ -25,14 +25,24 @@ new Swiper('.hero__swiper', {
 
 new Swiper('.tours__swiper', {
   // Navigation arrows
+  modules: [Navigation],
   navigation: {
     nextEl: '.tours__slider-next',
     prevEl: '.tours__slider-prev',
+    disabledClass: 'tours__slider-disabled'
   },
   breakpointsBase: 'container',
   breakpoints: {
     290: {
       slidesPerView: 1
+    },
+    678: {
+      slidesPerView: 2,
+      spaceBetween: 18
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30
     }
   },
 });
