@@ -46,3 +46,20 @@ new Swiper('.tours__swiper', {
     }
   },
 });
+
+new Swiper('.training__swiper', {
+  // Navigation arrows
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.tours__slider-next',
+    prevEl: '.tours__slider-prev',
+    disabledClass: 'tours__slider-disabled'
+  },
+  breakpointsBase: 'container',
+  breakpoints: {
+    290: {
+      slidesPerView: 1,
+      initialSlide: 2
+    },
+  },
+});

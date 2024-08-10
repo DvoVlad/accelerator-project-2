@@ -43,14 +43,73 @@
 }
 
 .training__second-title-wrapper {
-  margin: 0 auto;
+  margin: 0 auto 25px;
   width: 290px;
 }
 
 .training__second-title {
-  margin: 0;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  margin-top: 0;
 }
 
 .training__buttons-wrapper {
   display: none;
+}
+
+.training__swiper {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.training__swiper-slide {
+  min-height: 354px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.training__slide-image {
+  display: block;
+}
+
+.training__instructor-name-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.training__instructor-name-wrapper h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.training__vk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+
+  &::before {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 8px;
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-repeat: no-repeat;
+    background-color: #2d383f;
+  }
+}
+
+.training__instructor-description p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 16px;
 }
