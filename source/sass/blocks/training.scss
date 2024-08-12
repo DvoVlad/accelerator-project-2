@@ -5,6 +5,42 @@
   @include media-tablet {
     padding-top: 40px;
     padding-bottom: 40px;
+    position: relative;
+
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 612px;
+      right: 0;
+      width: 465px;
+      height: 280px;
+      background-image:
+        image-set(
+          url("../../img/background-2@1x.webp") type("image/webp") 1x,
+          url("../../img/background-2@2x.webp") type("image/webp") 2x,
+          url("../../img/background-2@1x.png") type("image/png") 1x,
+          url("../../img/background-2@2x.png") type("image/png") 2x
+        );
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  @include media-desktop {
+    &::before {
+      right: 0;
+      top: 613px;
+      width: 633px;
+      height: 280px;
+      background-image:
+        image-set(
+          url("../../img/background-desktop-2@1x.webp") type("image/webp") 1x,
+          url("../../img/background-desktop-2@2x.webp") type("image/webp") 2x,
+          url("../../img/background-desktop-2@1x.png") type("image/png") 1x,
+          url("../../img/background-desktop-2@2x.png") type("image/png") 2x
+        );
+    }
   }
 }
 
