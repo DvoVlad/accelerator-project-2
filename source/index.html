@@ -485,7 +485,38 @@
         </div>
       </section>
     </div>
-    <div data-test="about">about</div>
+    <div data-test="about">
+      <section class="about">
+        <div class="about__picture-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" width="660" height="498" type="image/webp" srcset="./img/about-desktop@1x.webp 1x, ./img/about-desktop@2x.webp 2x">
+            <source media="(min-width: 1440px)" width="660" height="498" type="image/jpg" srcset="./img/about-desktop@1x.jpg 1x,
+            ./img/about-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="450" height="350" type="image/webp" srcset="./img/about-tablet@1x.webp 1x, ./img/about-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" width="450" height="350" type="image/jpg" srcset="./img/about-tablet@1x.jpg 1x,
+            ./img/about-tablet@2x.jpg 2x">
+            <source width="320" height="400" type="image/webp" srcset="./img/about-mobile@1x.webp 1x,
+            ./img/about-mobile@2x.webp 2x">
+            <img width="320" height="400" src="./img/about-mobile@1x.jpg" alt="Слайд 4" srcset="./img/about-mobile@1x.jpg 1x,
+            ./img/about-mobile@2x.jpg 2x">
+          </picture>
+        </div>
+        <div class="about__text-wrapper">
+          <div class="about__title-wrapper">
+            <p aria-hidden="true">
+              О нас
+            </p>
+            <h2>
+              О нас
+            </h2>
+          </div>
+          <h3>История компании</h3>
+          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+          <h3>Наша цель</h3>
+          <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
+        </div>
+      </section>
+    </div>
     <div data-test="reviews">reviews</div>
     <div data-test="adv">adv</div>
     <div data-test="gallery">gallery</div>
