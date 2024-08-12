@@ -42,7 +42,8 @@ new Swiper('.tours__swiper', {
     },
     1200: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 30,
+      allowTouchMove: false
     }
   },
 });
@@ -63,11 +64,14 @@ new Swiper('.training__swiper', {
     },
     678: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 20,
+      initialSlide: 0
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 20
+      spaceBetween: 20,
+      initialSlide: 0,
+      allowTouchMove: false
     }
   },
 });

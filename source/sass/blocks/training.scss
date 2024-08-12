@@ -122,6 +122,7 @@
   font-weight: 800;
   margin-top: 0;
   margin-bottom: 0;
+  color: #2d383f;
 
   @include media-tablet {
     font-size: 25px;
@@ -188,6 +189,7 @@
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+  color: #2d383f;
 }
 
 .training__vk {
@@ -214,6 +216,7 @@
   margin-bottom: 0;
   font-size: 12px;
   line-height: 16px;
+  color: #2d383f;
 }
 
 .training__slider-next,
@@ -253,4 +256,231 @@
 
 .training__slider-disabled {
   background-color: #999999;
+}
+
+.training__learning-wrapper {
+  width: 290px;
+  margin: 25px auto 0;
+
+  @include media-tablet {
+    width: 678px;
+  }
+
+  @include media-desktop {
+    width: 1200px;
+    margin: 56px auto 0;
+  }
+}
+
+.training__learning-list {
+  margin-top: 25px;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 29px;
+  position: relative;
+
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 6px;
+    bottom: 18px;
+    width: 2px;
+    background-color: #0266c1;
+
+    @include media-tablet {
+      display: none;
+    }
+
+    @include media-desktop {
+      display: block;
+      top: auto;
+      bottom: 14px;
+      left: 34px;
+      right: 0;
+      width: auto;
+      height: 2px;
+    }
+  }
+
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 232px 272px;
+    grid-template-areas:
+      "studying    explanation"
+      "preparation lectures";
+    margin-top: 104px;
+    padding: 0;
+    gap: 104px 174px;
+  }
+
+  @include media-desktop {
+    margin-top: 23px;
+    gap: 0;
+    grid-template-columns: 253px 253px 253px 440px;
+    grid-template-areas: "studying preparation lectures explanation";
+    min-height: 102px;
+  }
+}
+
+.training__learning-item {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 11px;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -29px;
+    top: 11px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #0266c1;
+
+    @include media-tablet {
+      display: none;
+    }
+
+    @include media-desktop {
+      display: block;
+      left: 20px;
+      top: auto;
+      bottom: 8px;
+    }
+  }
+
+  @include media-tablet {
+    gap: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.training__learning-item.training__learning-item--lectures::after {
+  @include media-desktop {
+    left: 0;
+  }
+}
+
+.training__learning-item:last-child {
+  margin-bottom: 0;
+}
+
+.training__learning-item--studying {
+  grid-area: studying;
+}
+
+.training__learning-item--preparation {
+  grid-area: preparation;
+}
+
+.training__learning-item--lectures {
+  grid-area: lectures;
+}
+
+.training__learning-item--explanation {
+  grid-area: explanation;
+}
+
+.training__learning-item--studying::before {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/__spritemap#sprite-map-view");
+  background-repeat: no-repeat;
+
+  @include media-desktop {
+    margin-left: 10px;
+  }
+}
+
+.training__learning-item--preparation::before {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/__spritemap#sprite-boots-view");
+  background-repeat: no-repeat;
+
+  @include media-desktop {
+    margin-left: 10px;
+  }
+}
+
+.training__learning-item--lectures::before {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/__spritemap#sprite-pine-tree-view");
+  background-repeat: no-repeat;
+
+  @include media-desktop {
+    margin-left: 10px;
+  }
+}
+
+.training__learning-item--explanation::before {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/__spritemap#sprite-mountain-view");
+  background-repeat: no-repeat;
+
+  @include media-desktop {
+    margin-left: 10px;
+  }
+}
+
+.training__learning-item-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2d383f;
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include media-desktop {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.training__learning-item--lectures .training__learning-item-text {
+  @include media-tablet {
+    width: 196px;
+  }
+}
+
+.training__learning-item--explanation .training__learning-item-text {
+  @include media-desktop {
+    width: 198px;
+  }
+}
+
+.training__learning-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #2d383f;
+
+  @include media-tablet {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include media-desktop {
+    font-size: 21px;
+    line-height: 21px;
+  }
 }
