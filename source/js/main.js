@@ -51,9 +51,9 @@ new Swiper('.training__swiper', {
   // Navigation arrows
   modules: [Navigation],
   navigation: {
-    nextEl: '.tours__slider-next',
-    prevEl: '.tours__slider-prev',
-    disabledClass: 'tours__slider-disabled'
+    nextEl: '.training__slider-next',
+    prevEl: '.training__slider-prev',
+    disabledClass: 'training__slider-disabled'
   },
   breakpointsBase: 'container',
   breakpoints: {
@@ -61,5 +61,13 @@ new Swiper('.training__swiper', {
       slidesPerView: 1,
       initialSlide: 2
     },
+    678: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    }
   },
 });
