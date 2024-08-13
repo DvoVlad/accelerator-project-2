@@ -6,6 +6,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  @include media-desktop {
+    padding-top: 100px;
+    padding-bottom: 87px;
+  }
 }
 
 .reviews__title-wrapper {
@@ -25,6 +30,12 @@
     width: 678px;
     margin: 0 auto 25px;
   }
+
+  @include media-desktop {
+    width: 1200px;
+    padding-top: 45px;
+    margin: 0 auto 38px;
+  }
 }
 
 .reviews__title-copy {
@@ -41,6 +52,11 @@
     font-size: 40px;
     line-height: 40px;
   }
+
+  @include media-desktop {
+    font-size: 55px;
+    line-height: 55px;
+  }
 }
 
 .reviews__title {
@@ -55,6 +71,12 @@
     font-size: 25px;
     line-height: 25px;
   }
+
+  @include media-desktop {
+    margin-bottom: 0;
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 
 .reviews__swiper {
@@ -63,6 +85,10 @@
 
   @include media-tablet {
     width: 1160px;
+  }
+
+  @include media-desktop {
+    width: 1520px;
   }
 }
 
@@ -79,11 +105,19 @@
     padding-left: 19px;
     padding-right: 29px;
   }
+
+  @include media-desktop {
+    padding-right: 39px;
+  }
 }
 
 .reviews__text-wrapper {
   @include media-tablet {
     width: 299px;
+  }
+
+  @include media-desktop {
+    width: 352px;
   }
 }
 
@@ -95,6 +129,11 @@
 
   @include media-tablet {
     margin-top: 0;
+  }
+
+  @include media-desktop {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -113,6 +152,13 @@
     margin-top: 25px;
     margin-bottom: 6px;
   }
+
+  @include media-desktop {
+    margin-top: 2px;
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 8px;
+  }
 }
 
 .reviews__text-wrapper h3 + p {
@@ -123,6 +169,10 @@
 
   @include media-tablet {
     margin-top: 6px;
+  }
+
+  @include media-desktop {
+    margin-top: 8px;
   }
 }
 
@@ -186,5 +236,10 @@
     overflow: hidden;
     padding-left: 45px;
     box-sizing: border-box;
+  }
+
+  @include media-desktop {
+    width: 1440px;
+    padding-left: 120px;
   }
 }
