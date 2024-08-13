@@ -99,3 +99,5 @@ new Swiper('.reviews__swiper', {
     }
   },
 });
+
+//breakpoints: { 320: { enabled: false, }, 768: { enabled: true, } }

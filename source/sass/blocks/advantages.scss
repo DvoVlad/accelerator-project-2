@@ -1,0 +1,133 @@
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.advantages__title-wrapper {
+  width: 320px;
+  margin: 0 auto 20px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  position: relative;
+  text-align: center;
+}
+
+.advantages__title-copy {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  opacity: 0.03;
+  width: 100%;
+  color: #2d383f;
+}
+
+.advantages__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  color: #2d383f;
+}
+
+.swiper.advantages__swiper {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.swiper-wrapper.advantages__swiper-wrapper {
+  display: block;
+}
+
+.advantages__swiper-slide {
+  padding: 20px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  margin-bottom: 15px;
+}
+
+.advantages__swiper-slide:last-child {
+  margin: 0;
+}
+
+.advantages__swiper-slide h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.advantages__swiper-slide p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.advantages__swiper-slide--safety::before {
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #0266c1;
+  background-image: url("/__spritemap#sprite-safety-view");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
+}
+
+.advantages__swiper-slide--expertize::before {
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #0266c1;
+  background-image: url("/__spritemap#sprite-expertize-view");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
+}
+
+.advantages__swiper-slide--inventary::before {
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #0266c1;
+  background-image: url("/__spritemap#sprite-inventary-view");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
+}
+
+.advantages__swiper-slide--travels::before {
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #0266c1;
+  background-image: url("/__spritemap#sprite-travels-view");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
+}
+
+.advantages__swiper-slide--ecology::before {
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #0266c1;
+  background-image: url("/__spritemap#sprite-ecology-view");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
+}
