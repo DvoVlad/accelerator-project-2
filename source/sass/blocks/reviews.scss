@@ -41,3 +41,33 @@
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   box-sizing: border-box;
 }
+
+.reviews__text-wrapper p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.reviews__text-wrapper p + p {
+  margin-top: 8px;
+}
+
+.reviews__text-wrapper h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.reviews__text-wrapper h3 + p {
+  line-height: 12px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.reviews__picture-wrapper img {
+  display: block;
+}
