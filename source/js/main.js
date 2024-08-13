@@ -89,5 +89,9 @@ new Swiper('.reviews__swiper', {
     290: {
       slidesPerView: 1
     },
+    1160: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    }
   },
 });
