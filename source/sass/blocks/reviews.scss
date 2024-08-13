@@ -1,0 +1,43 @@
+.reviews {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.reviews__title-wrapper {
+  padding-top: 16px;
+  padding-bottom: 17px;
+  position: relative;
+  width: 290px;
+  margin: 0 auto 15px;
+}
+
+.reviews__title-copy {
+  position: absolute;
+  top: 0;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2d383f;
+  opacity: 0.03;
+  margin: 0;
+}
+
+.reviews__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  color: #2d383f;
+}
+
+.reviews__swiper {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.reviews__swiper-slide {
+  padding: 20px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  box-sizing: border-box;
+}

@@ -75,3 +75,19 @@ new Swiper('.training__swiper', {
     }
   },
 });
+
+new Swiper('.reviews__swiper', {
+  // Navigation arrows
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.reviews__slider-next',
+    prevEl: '.reviews__slider-prev',
+    disabledClass: 'reviews__slider-disabled'
+  },
+  breakpointsBase: 'container',
+  breakpoints: {
+    290: {
+      slidesPerView: 1
+    },
+  },
+});
