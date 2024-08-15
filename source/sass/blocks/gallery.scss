@@ -1,5 +1,13 @@
 .gallery {
   padding-top: 20px;
+
+  @include media-tablet {
+    padding-top: 40px;
+  }
+
+  @include media-desktop {
+    padding-top: 100px;
+  }
 }
 
 .gallery__title-wrapper {
@@ -15,6 +23,13 @@
     width: 678px;
     margin: 0 auto 20px;
   }
+
+  @include media-desktop {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    width: 1200px;
+    margin: 0 auto 26px;
+  }
 }
 
 .gallery__title {
@@ -27,6 +42,11 @@
   @include media-tablet {
     font-size: 25px;
     line-height: 25px;
+  }
+
+  @include media-desktop {
+    font-size: 35px;
+    line-height: 35px;
   }
 }
 
@@ -44,21 +64,97 @@
     font-size: 40px;
     line-height: 40px;
   }
+
+  @include media-desktop {
+    font-size: 55px;
+    line-height: 55px;
+  }
 }
 
 .gallery__text-wrapper {
   width: 290px;
   margin: 0 auto 31px;
+
+  @include media-tablet {
+    width: 678px;
+    margin: 0 auto 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  @include media-desktop {
+    display: block;
+    width: 1200px;
+  }
 }
 
 .gallery__text-wrapper p {
   margin: 0;
   font-size: 12px;
   line-height: 18px;
+
+  @include media-tablet {
+    width: 420px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include media-desktop {
+    width: 592px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .gallery__buttons-wrapper {
   display: none;
+
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  @include media-desktop {
+    display: none;
+  }
+}
+
+.gallery__slider-next,
+.gallery__slider-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.gallery__slider-prev::before {
+  content: " ";
+  display: block;
+  width: 14px;
+  height: 9px;
+  mask-image: url("/__spritemap#sprite-slider-arrow-left-view");
+  mask-size: 14px 9px;
+  mask-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.gallery__slider-next::before {
+  content: " ";
+  display: block;
+  width: 14px;
+  height: 9px;
+  mask-image: url("/__spritemap#sprite-slider-arrow-right-view");
+  mask-size: 14px 9px;
+  mask-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .gallery__swiper {
