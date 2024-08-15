@@ -10,6 +10,26 @@
   @include media-desktop {
     padding-top: 100px;
     padding-bottom: 87px;
+    position: relative;
+
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 317px;
+      right: 0;
+      width: 1440px;
+      height: 447px;
+      background-image:
+        image-set(
+          url("../../img/background-3-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/background-3-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/background-3-desktop@1x.png") type("image/png") 1x,
+          url("../../img/background-3-desktop@2x.png") type("image/png") 2x
+        );
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
 }
 
@@ -95,6 +115,7 @@
 .swiper-slide.reviews__swiper-slide {
   padding: 19px;
   border: 1px solid #ffffff;
+  background-color: #ffffff;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   box-sizing: border-box;
 
