@@ -22,6 +22,7 @@
           url("../../img/background-2@1x.png") type("image/png") 1x,
           url("../../img/background-2@2x.png") type("image/png") 2x
         );
+      background-size: 465px 280px;
       background-repeat: no-repeat;
       z-index: -1;
     }
@@ -40,6 +41,7 @@
           url("../../img/background-desktop-2@1x.png") type("image/png") 1x,
           url("../../img/background-desktop-2@2x.png") type("image/png") 2x
         );
+      background-size: 633px 280px;
     }
   }
 }
