@@ -1,6 +1,40 @@
 .advantages {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @include media-tablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 166px;
+      right: 0;
+      width: 768px;
+      height: 996px;
+      background-image:
+        image-set(
+          url("../../img/background-3@1x.webp") type("image/webp") 1x,
+          url("../../img/background-3@2x.webp") type("image/webp") 2x,
+          url("../../img/background-3@1x.png") type("image/png") 1x,
+          url("../../img/background-3@2x.png") type("image/png") 2x
+        );
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  @include media-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .advantages__title-wrapper {
@@ -10,6 +44,19 @@
   padding-bottom: 17px;
   position: relative;
   text-align: center;
+
+  @include media-tablet {
+    width: 678px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 0 auto 50px;
+  }
+
+  @include media-desktop {
+    width: 1200px;
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title-copy {
@@ -22,6 +69,16 @@
   opacity: 0.03;
   width: 100%;
   color: #2d383f;
+
+  @include media-tablet {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include media-desktop {
+    font-size: 55px;
+    line-height: 55px;
+  }
 }
 
 .advantages__title {
@@ -30,23 +87,112 @@
   font-size: 22px;
   line-height: 22px;
   color: #2d383f;
+
+  @include media-tablet {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include media-desktop {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 
 .swiper.advantages__swiper {
   width: 290px;
   margin: 0 auto;
+
+  @include media-tablet {
+    width: 678px;
+  }
+
+  @include media-desktop {
+    width: 1200px; /* 2020px */
+    overflow: visible;
+  }
+}
+
+.advantages__buttons-wrapper {
+  display: none;
+
+  @include media-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 78px;
+    margin: 50px auto 0;
+  }
+}
+
+.advantages__slider-next,
+.advantages__slider-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.advantages__slider-prev::before {
+  content: " ";
+  display: block;
+  width: 14px;
+  height: 9px;
+  mask-image: url("/__spritemap#sprite-slider-arrow-left-view");
+  mask-size: 14px 9px;
+  mask-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.advantages__slider-next::before {
+  content: " ";
+  display: block;
+  width: 14px;
+  height: 9px;
+  mask-image: url("/__spritemap#sprite-slider-arrow-right-view");
+  mask-size: 14px 9px;
+  mask-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .swiper-wrapper.advantages__swiper-wrapper {
-  display: block;
+  flex-wrap: wrap;
+
+  @include media-tablet {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  @include media-desktop {
+    gap: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 
-.advantages__swiper-slide {
-  padding: 20px 10px;
+.swiper-slide.advantages__swiper-slide {
+  padding: 19px 9px;
   text-align: center;
   box-sizing: border-box;
   border: 1px solid rgba(2, 102, 193, 0.1);
   margin-bottom: 15px;
+
+  @include media-tablet {
+    padding: 29px 19px;
+    width: 324px;
+  }
+
+  @include media-desktop {
+    width: auto;
+    padding: 39px 19px;
+    margin-bottom: 0;
+    min-height: 329px;
+  }
 }
 
 .advantages__swiper-slide:last-child {
@@ -59,12 +205,29 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
+
+  @include media-tablet {
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @include media-desktop {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .advantages__swiper-slide p {
   margin: 0;
   font-size: 12px;
   line-height: 18px;
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .advantages__swiper-slide--safety::before {
@@ -130,4 +293,12 @@
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center center;
+}
+
+.advantages__loop-wrapper {
+  @include media-desktop {
+    width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 }

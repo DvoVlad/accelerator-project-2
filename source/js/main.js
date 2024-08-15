@@ -96,8 +96,72 @@ new Swiper('.reviews__swiper', {
     1520: {
       slidesPerView: 2,
       spaceBetween: 120,
+      allowTouchMove: false
     }
   },
 });
 
+let advantagesSlider;
+
+const initAdvantageSlider = () => {
+  if(window.matchMedia('(min-width: 1440px)').matches && advantagesSlider === undefined) {
+    advantagesSlider = new Swiper('.advantages__swiper', {
+      // Navigation arrows
+      modules: [Navigation],
+      loop: true,
+      navigation: {
+        nextEl: '.advantages__slider-next',
+        prevEl: '.advantages__slider-prev',
+        disabledClass: 'advantages__slider-disabled'
+      },
+      breakpointsBase: 'container',
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+          slidesPerGroup: 2,
+          spaceBetween: 30,
+          initialSlide: 1,
+        }
+      },
+    });
+  } else if(window.matchMedia('(max-width: 1439px)').matches && advantagesSlider !== undefined){
+    advantagesSlider.destroy();
+    advantagesSlider = undefined;
+  }
+};
+
+window.addEventListener('load', () => {
+  initAdvantageSlider();
+});
+
+window.addEventListener('resize', () => {
+  initAdvantageSlider();
+});
+
+new Swiper('.gallery__swiper', {
+  // Navigation arrows
+  modules: [Navigation],
+  loop: true,
+  navigation: {
+    nextEl: '.gallery__slider-next',
+    prevEl: '.gallery__slider-prev',
+    disabledClass: 'advantages__slider-disabled'
+  },
+  breakpointsBase: 'container',
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    1440: {
+      slidesPerView: 5,
+      spaceBetween: 5,
+      enabled: false
+    }
+  },
+});
 //breakpoints: { 320: { enabled: false, }, 768: { enabled: true, } }

@@ -645,35 +645,169 @@
           </h2>
         </div>
         <!-- Slider main container -->
-        <div class="swiper advantages__swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper advantages__swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--safety">
-              <h3>Безопасность</h3>
-              <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
-            </div>
-            <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--expertize">
-              <h3>Экспертиза и знания</h3>
-              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
-            </div>
-            <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--inventary">
-              <h3>Оборудование и снаряжение</h3>
-              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
-            </div>
-            <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--travels">
-              <h3>Индивидуальные маршруты</h3>
-              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
-            </div>
-            <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--ecology">
-              <h3>Бережное отношение к природе</h3>
-              <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+        <div class="advantages__loop-wrapper">
+          <div class="swiper advantages__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper advantages__swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--safety">
+                <h3>Безопасность</h3>
+                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+              </div>
+              <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--expertize">
+                <h3>Экспертиза и знания</h3>
+                <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+              </div>
+              <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--inventary">
+                <h3>Оборудование и снаряжение</h3>
+                <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+              </div>
+              <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--travels">
+                <h3>Индивидуальные маршруты</h3>
+                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+              </div>
+              <div class="swiper-slide advantages__swiper-slide advantages__swiper-slide--ecology">
+                <h3>Бережное отношение к природе</h3>
+                <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="advantages__buttons-wrapper">
+          <button class="swiper-button-prev advantages__slider-prev" type="button"><span class="visually-hidden">Кнопка назад</span></button>
+          <button class="swiper-button-next advantages__slider-next" type="button"><span class="visually-hidden">Кнопка вперед</span></button>
+        </div>
       </section>
     </div>
-    <div data-test="gallery">gallery</div>
+    <div data-test="gallery">
+      <section class="gallery">
+        <div class="gallery__title-wrapper">
+          <p class="gallery__title-copy" aria-hidden="true">Фотогалерея</p>
+          <h2 class="gallery__title">Фотогалерея</h2>
+        </div>
+        <div class="gallery__text-wrapper">
+          <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото.
+            Лучшие фотографии украсят этот раздел нашего сайта.</p>
+          <div class="gallery__buttons-wrapper">
+            <button class="swiper-button-prev gallery__slider-prev" type="button"><span class="visually-hidden">Кнопка назад</span></button>
+            <button class="swiper-button-next gallery__slider-next" type="button"><span class="visually-hidden">Кнопка вперед</span></button>
+          </div>
+        </div>
+        <div class="swiper gallery__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="gallery__picture-wrapper">
+                <picture>
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/webp" srcset="./img/gallery-desktop-1@1x.webp 1x, ./img/gallery-desktop-1@2x.webp 2x">
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/jpg" srcset="./img/gallery-desktop-1@1x.jpg 1x,
+                    ./img/gallery-desktop-1@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/webp" srcset="./img/gallery-tablet-1@1x.webp 1x, ./img/gallery-tablet-1@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/jpg" srcset="./img/gallery-tablet-1@1x.jpg 1x,
+                    ./img/gallery-tablet-1@2x.jpg 2x">
+                    <source width="158" height="266" type="image/webp" srcset="./img/gallery-mobile-1@1x.webp 1x,
+                    ./img/gallery-mobile-1@2x.webp 2x">
+                    <img width="158" height="266" src="./img/gallery-mobile-1@1x.jpg" alt="Фото 1" srcset="./img/gallery-mobile-1@1x.jpg 1x,
+                    ./img/gallery-mobile-1@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="gallery__picture-wrapper">
+                <picture>
+                    <source media="(min-width: 1440px)" width="284" height="233" type="image/webp" srcset="./img/gallery-desktop-2-top@1x.webp 1x, ./img/gallery-desktop-2-top@2x.webp 2x">
+                    <source media="(min-width: 1440px)" width="284" height="233" type="image/jpg" srcset="./img/gallery-desktop-2-top@1x.jpg 1x,
+                    ./img/gallery-desktop-2-top@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="252" height="210" type="image/webp" srcset="./img/gallery-tablet-2-top@1x.webp 1x, ./img/gallery-tablet-2-top@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="252" height="210" type="image/jpg" srcset="./img/gallery-tablet-2-top@1x.jpg 1x,
+                    ./img/gallery-tablet-2-top@2x.jpg 2x">
+                    <source width="157" height="135" type="image/webp" srcset="./img/gallery-mobile-2-top@1x.webp 1x,
+                    ./img/gallery-mobile-2-top@2x.webp 2x">
+                    <img width="157" height="135" src="./img/gallery-mobile-2-top@1x.jpg" alt="Фото 2 Верхнее" srcset="./img/gallery-mobile-2-top@1x.jpg 1x,
+                    ./img/gallery-mobile-2-top@2x.jpg 2x">
+                </picture>
+              </div>
+              <div class="gallery__picture-wrapper">
+                <picture>
+                    <source media="(min-width: 1440px)" width="284" height="223" type="image/webp" srcset="./img/gallery-desktop-2-bottom@1x.webp 1x, ./img/gallery-desktop-2-bottom@2x.webp 2x">
+                    <source media="(min-width: 1440px)" width="284" height="223" type="image/jpg" srcset="./img/gallery-desktop-2-bottom@1x.jpg 1x,
+                    ./img/gallery-desktop-2-bottom@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="252" height="202" type="image/webp" srcset="./img/gallery-tablet-2-bottom@1x.webp 1x, ./img/gallery-tablet-2-bottom@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="252" height="202" type="image/jpg" srcset="./img/gallery-tablet-2-bottom@1x.jpg 1x,
+                    ./img/gallery-tablet-2-bottom@2x.jpg 2x">
+                    <source width="157" height="125" type="image/webp" srcset="./img/gallery-mobile-2-bottom@1x.webp 1x,
+                    ./img/gallery-mobile-2-bottom@2x.webp 2x">
+                    <img width="157" height="125" src="./img/gallery-mobile-2-bottom@1x.jpg" alt="Фото 2 Нижнее" srcset="./img/gallery-mobile-2-bottom@1x.jpg 1x,
+                    ./img/gallery-mobile-2-bottom@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="gallery__picture-wrapper">
+                <picture>
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/webp" srcset="./img/gallery-desktop-3@1x.webp 1x, ./img/gallery-desktop-3@2x.webp 2x">
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/jpg" srcset="./img/gallery-desktop-3@1x.jpg 1x,
+                    ./img/gallery-desktop-3@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/webp" srcset="./img/gallery-tablet-3@1x.webp 1x, ./img/gallery-tablet-3@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/jpg" srcset="./img/gallery-tablet-3@1x.jpg 1x,
+                    ./img/gallery-tablet-3@2x.jpg 2x">
+                    <source width="158" height="266" type="image/webp" srcset="./img/gallery-mobile-3@1x.webp 1x,
+                    ./img/gallery-mobile-3@2x.webp 2x">
+                    <img width="158" height="266" src="./img/gallery-mobile-3@1x.jpg" alt="Фото 3" srcset="./img/gallery-mobile-3@1x.jpg 1x,
+                    ./img/gallery-mobile-3@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="gallery__picture-wrapper">
+                <picture>
+                    <source media="(min-width: 1440px)" width="284" height="233" type="image/webp" srcset="./img/gallery-desktop-4-top@1x.webp 1x, ./img/gallery-desktop-4-top@2x.webp 2x">
+                    <source media="(min-width: 1440px)" width="284" height="233" type="image/jpg" srcset="./img/gallery-desktop-4-top@1x.jpg 1x,
+                    ./img/gallery-desktop-4-top@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="252" height="210" type="image/webp" srcset="./img/gallery-tablet-4-top@1x.webp 1x, ./img/gallery-tablet-4-top@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="252" height="210" type="image/jpg" srcset="./img/gallery-tablet-4-top@1x.jpg 1x,
+                    ./img/gallery-tablet-4-top@2x.jpg 2x">
+                    <source width="157" height="135" type="image/webp" srcset="./img/gallery-mobile-4-top@1x.webp 1x,
+                    ./img/gallery-mobile-4-top@2x.webp 2x">
+                    <img width="157" height="135" src="./img/gallery-mobile-4-top@1x.jpg" alt="Фото 4 Верхнее" srcset="./img/gallery-mobile-4-top@1x.jpg 1x,
+                    ./img/gallery-mobile-4-top@2x.jpg 2x">
+                </picture>
+              </div>
+              <div class="gallery__picture-wrapper">
+                <picture>
+                    <source media="(min-width: 1440px)" width="284" height="223" type="image/webp" srcset="./img/gallery-desktop-2-bottom@1x.webp 1x, ./img/gallery-desktop-2-bottom@2x.webp 2x">
+                    <source media="(min-width: 1440px)" width="284" height="223" type="image/jpg" srcset="./img/gallery-desktop-2-bottom@1x.jpg 1x,
+                    ./img/gallery-desktop-2-bottom@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="252" height="202" type="image/webp" srcset="./img/gallery-tablet-4-bottom@1x.webp 1x, ./img/gallery-tablet-4-bottom@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="252" height="202" type="image/jpg" srcset="./img/gallery-tablet-4-bottom@1x.jpg 1x,
+                    ./img/gallery-tablet-4-bottom@2x.jpg 2x">
+                    <source width="157" height="125" type="image/webp" srcset="./img/gallery-mobile-4-bottom@1x.webp 1x,
+                    ./img/gallery-mobile-4-bottom@2x.webp 2x">
+                    <img width="157" height="125" src="./img/gallery-mobile-4-bottom@1x.jpg" alt="Фото 4 Нижнее" srcset="./img/gallery-mobile-2-bottom@1x.jpg 1x,
+                    ./img/gallery-mobile-4-bottom@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="gallery__picture-wrapper">
+                <picture>
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/webp" srcset="./img/gallery-desktop-5@1x.webp 1x, ./img/gallery-desktop-5@2x.webp 2x">
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/jpg" srcset="./img/gallery-desktop-5@1x.jpg 1x,
+                    ./img/gallery-desktop-5@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/webp" srcset="./img/gallery-tablet-5@1x.webp 1x, ./img/gallery-tablet-5@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/jpg" srcset="./img/gallery-tablet-5@1x.jpg 1x,
+                    ./img/gallery-tablet-5@2x.jpg 2x">
+                    <source width="158" height="266" type="image/webp" srcset="./img/gallery-mobile-5@1x.webp 1x,
+                    ./img/gallery-mobile-5@2x.webp 2x">
+                    <img width="158" height="266" src="./img/gallery-mobile-5@1x.jpg" alt="Фото 5" srcset="./img/gallery-mobile-5@1x.jpg 1x,
+                    ./img/gallery-mobile-5@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
