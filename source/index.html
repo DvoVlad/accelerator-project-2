@@ -813,8 +813,7 @@
         <div class="form__overlay">
           <div class="form__wrapper">
             <h2>Остались вопросы?</h2>
-            <p>Заполните форму и наш оператор<br>свяжется<br>с вами для консультации.</p>
-
+            <p>Заполните форму и наш оператор <br>свяжется <br>с вами для консультации.</p>
             <form class="form__send-form" method="post" action="https://echo.htmlacademy.ru">
               <label class="form__label"><span>Телефон</span><input class="form__input form__input--phone" required type="text" name="phone" placeholder="+7 (000) 000-00-00" autocomplete="off" pattern="[^a-z^A-Z^а-я^А-Я]{1,}" title="Нельзя вводить буквы"></label>
               <label class="form__label"><span>Email</span><input class="form__input" required type="text" name="email" placeholder="test@mail.ru" autocomplete="off" pattern="[A-Za-z]{1,}[@]{1}[A-za-zА-яа-я]{1,}[\.]{1}[A-Za-zА-яа-я]{2,4}" title="Введите корректный email"></label>
@@ -824,7 +823,38 @@
         </div>
       </section>
     </div>
-    <div data-test="footer">footer</div>
+    <div data-test="footer">
+      <footer class="page-footer">
+        <section class="page-footer__contacts">
+          <div class="page-footer__contacts-wrapper">
+            <div class="page-footer__title-wrapper">
+              <p class="page-footer__title-copy" aria-hidden="true">Контакты</p>
+              <h2 class="page-footer__title">Контакты</h2>
+            </div>
+            <div class="page-footer__description-wrapper">
+              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+            </div>
+            <ul class="fpage-ooter__contacts-list">
+              <li class="page-footer__contacts-item page-footer__contacts-item--phone-icon">
+                <h3>Телефон</h3>
+                <a>+7 983 745-45-45</a>
+              </li>
+              <li class="page-footer__contacts-item page-footer__contacts-item--email-icon">
+                <h3>Email</h3>
+                <a>info@lifetour.com</a>
+              </li>
+              <li class="page-footer__contacts-item page-footer__contacts-item--address-icon">
+                <h3>Адрес</h3>
+                <address>г. Москва, пр-т Мира,<br> д. 14, офис 101</address>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__map-wrapper">
+
+          </div>
+        </section>
+      </footer>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
 
