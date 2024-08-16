@@ -4,6 +4,7 @@ import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './menu';
+import './form';
 
 new Swiper('.hero__swiper', {
   modules: [Pagination],
@@ -164,4 +165,9 @@ new Swiper('.gallery__swiper', {
     }
   },
 });
-//breakpoints: { 320: { enabled: false, }, 768: { enabled: true, } }
+
+const form = document.querySelector('.form__send-form');
+const sendButton = document.querySelector('.form__submit');
+sendButton.addEventListener('click', () => {
+  form.classList.add('form__send-form--sended');
+});

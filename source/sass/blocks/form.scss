@@ -1,0 +1,112 @@
+.form__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  min-height: 638px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-image:
+    image-set(
+      url("../../img/form-mobile-background@1x.webp") type("image/webp") 1x,
+      url("../../img/form-mobile-background@2x.webp") type("image/webp") 2x,
+      url("../../img/form-mobile-background@1x.jpg") type("image/jpg") 1x,
+      url("../../img/form-mobile-background@2x.jpg") type("image/jpg") 2x
+    );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form__wrapper {
+  text-align: center;
+}
+
+.form__wrapper h2 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.form__wrapper p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form__label span {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  color: #2d383f;
+  transition: opacity 0.3s;
+}
+
+.form__label:has(.form__input:disabled) span {
+  opacity: 0.5;
+}
+
+.form__input {
+  width: 258px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 17px 15px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  font-family: inherit;
+
+  &::placeholder {
+    opacity: 0;
+    color: #0266c1;
+  }
+
+  &:hover {
+    border: 1px solid #0266c1;
+  }
+
+  &:focus-visible {
+    border: 1px solid #2d383f;
+    outline: none;
+  }
+
+  &:disabled {
+    border: 1px solid #999999;
+    background-color: #ffffff;
+  }
+}
+
+.form__send-form--sended .form__input:invalid {
+  border: 1px solid #ff121f;
+  color: rgba(45, 56, 63, 0.5);
+}
+
+.form__input--show-placeholder {
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form__submit {
+  background-color: #0266c1;
+  box-sizing: border-box;
+  width: 258px;
+  height: 58px;
+  padding: 21px 19px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: inherit;
+}
