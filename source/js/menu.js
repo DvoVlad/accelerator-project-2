@@ -7,6 +7,12 @@ const toggleMenu = () => {
   document.body.classList.toggle('body--scroll-lock');
 };
 
+const removeMenu = () => {
+  burgerButton.classList.remove('page-header__burger--cross');
+  navigation.classList.remove('page-header__navigation--open');
+  document.body.classList.remove('body--scroll-lock');
+};
+
 burgerButton.addEventListener('click', () => {
   toggleMenu();
 });
@@ -16,5 +22,5 @@ navigation.addEventListener('click', (e) => {
   if(!element.closest('.page-header__item-link')){
     return;
   }
-  toggleMenu();
+  removeMenu();
 });

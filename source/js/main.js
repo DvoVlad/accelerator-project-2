@@ -153,10 +153,12 @@ new Swiper('.gallery__swiper', {
     320: {
       slidesPerView: 2,
       spaceBetween: 5,
+      enabled: true
     },
     768: {
       slidesPerView: 3,
       spaceBetween: 5,
+      enabled: true
     },
     1440: {
       slidesPerView: 5,

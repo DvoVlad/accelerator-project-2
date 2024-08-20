@@ -93,13 +93,14 @@
 }
 
 .page-footer__contacts-list {
+  box-sizing: border-box;
   list-style: none;
   width: 290px;
   margin: 0 auto;
   padding: 0;
 
   @include media-tablet {
-    width: 678px;
+    width: 680px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -160,7 +161,7 @@
 }
 
 .page-footer__contacts-item--email-icon::before {
-  background-image: url("/__spritemap#sprite-email-view");
+  background-image: url("/__spritemap#sprite-mail-view");
   background-repeat: no-repeat;
 }
 
@@ -328,6 +329,20 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  &:focus-visible {
+    outline: 1px solid #2d383f;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    color: #0266c1;
+  }
 }
 
 .page-footer__phone {
@@ -342,7 +357,23 @@
     font-size: 18px;
     line-height: 18px;
     text-align: right;
+
+    &:hover {
+      color: rgba(2, 102, 193, 0.1);
+    }
+
+    &:focus-visible {
+      color: #0266c1;
+    }
+
+    &:active {
+      color: #1c3374;
+    }
   }
+}
+
+.page-footer__phone--disabled {
+  color: #999999;
 }
 
 .page-footer__socials {

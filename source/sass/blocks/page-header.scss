@@ -66,6 +66,19 @@
   margin-bottom: 0;
   grid-area: phone;
   text-align: right;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus-visible {
+    color: #2d383f;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
 
   @include media-tablet {
     margin-top: 0;
@@ -77,6 +90,10 @@
     font-size: 18px;
     line-height: 18px;
   }
+}
+
+.page-header__phone--disabled {
+  color: #999999;
 }
 
 .page-header__logo-wrapper {
@@ -142,6 +159,21 @@
 .page-header__item-link {
   color: #ffffff;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2px;
+  }
+
+  &:focus-visible {
+    outline: 1px solid #ffffff;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
 
   @include media-desktop {
     font-size: 16px;
@@ -161,4 +193,8 @@
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.page-header__item-link--disabled {
+  color: #999999;
 }

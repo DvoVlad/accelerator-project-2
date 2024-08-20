@@ -223,6 +223,33 @@
   border: none;
   cursor: pointer;
   padding: 0;
+
+  &:hover {
+    border: 1px solid #1c3374;
+    background-color: #ffffff;
+
+    &::before {
+      background-color: #1c3374;
+    }
+  }
+
+  &:focus-visible {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+
+    &::before {
+      background-color: #1c3374;
+    }
+  }
+
+  &:active {
+    border: 1px solid #1c3374;
+    background-color: #1c3374;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .reviews__slider-prev::before {
@@ -247,8 +274,14 @@
   background-color: #ffffff;
 }
 
-.reviews__slider-disabled {
+.reviews__slider-next.reviews__slider-disabled,
+.reviews__slider-prev.reviews__slider-disabled {
   background-color: #999999;
+  border: 1px solid #999999;
+
+  &::before {
+    background-color: #ffffff;
+  }
 }
 
 .reviews__slider-wrapper {

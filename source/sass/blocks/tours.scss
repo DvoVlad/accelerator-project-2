@@ -328,6 +328,30 @@
     background-color: #2d383f;
   }
 
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+
+    &::after {
+      background-color: rgba(2, 102, 193, 0.1);
+    }
+  }
+
+  &:focus-visible {
+    color: #0266c1;
+
+    &::after {
+      background-color: #0266c1;
+    }
+  }
+
+  &:active {
+    color: #1c3374;
+
+    &::after {
+      background-color: #1c3374;
+    }
+  }
+
   @include media-tablet {
     padding: 10px 235px;
     font-size: 16px;
@@ -337,6 +361,14 @@
   @include media-desktop {
     margin: 53px auto 0;
     padding: 10px 495px;
+  }
+}
+
+.tours__link-to-all--disabled {
+  color: #999999;
+
+  &::after {
+    background-color: #999999;
   }
 }
 
@@ -351,6 +383,33 @@
   border: none;
   cursor: pointer;
   padding: 0;
+
+  &:hover {
+    border: 1px solid #1c3374;
+    background-color: #ffffff;
+
+    &::before {
+      background-color: #1c3374;
+    }
+  }
+
+  &:focus-visible {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+
+    &::before {
+      background-color: #1c3374;
+    }
+  }
+
+  &:active {
+    border: 1px solid #1c3374;
+    background-color: #1c3374;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .tours__slider-prev::before {
@@ -375,6 +434,12 @@
   background-color: #ffffff;
 }
 
-.tours__slider-disabled {
+.tours__slider-next.tours__slider-disabled,
+.tours__slider-prev.tours__slider-disabled {
   background-color: #999999;
+  border: 1px solid #999999;
+
+  &::before {
+    background-color: #ffffff;
+  }
 }

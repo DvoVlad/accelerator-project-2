@@ -26,17 +26,17 @@
           </div>
           <nav class="page-header__navigation">
             <ul class="page-header__list">
-              <li class="page-header__item"><a class="page-header__item-link" href="#">Туры</a></li>
-              <li class="page-header__item"><a class="page-header__item-link" href="#">Обучение</a></li>
-              <li class="page-header__item"><a class="page-header__item-link" href="#">О нас</a></li>
-              <li class="page-header__item"><a class="page-header__item-link" href="#">Отзывы</a></li>
-              <li class="page-header__item"><a class="page-header__item-link" href="#">Фотографии</a></li>
-              <li class="page-header__item"><a class="page-header__item-link" href="#">Контакты</a></li>
+              <li class="page-header__item"><a class="page-header__item-link" href="#tours">Туры</a></li>
+              <li class="page-header__item"><a class="page-header__item-link" href="#training">Обучение</a></li>
+              <li class="page-header__item"><a class="page-header__item-link" href="#about">О нас</a></li>
+              <li class="page-header__item"><a class="page-header__item-link" href="#reviews">Отзывы</a></li>
+              <li class="page-header__item"><a class="page-header__item-link" href="#gallery">Фотографии</a></li>
+              <li class="page-header__item"><a class="page-header__item-link" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
-          <p class="page-header__phone">
+          <a href="tel:88000000000" class="page-header__phone">
             8 800 000-00-00
-          </p>
+          </a>
         </div>
       </header>
     </div>
@@ -150,7 +150,7 @@
       </section>
     </div>
     <div data-test="tours">
-      <section class="tours">
+      <section class="tours" id="tours">
         <div class="tours__title-wrapper">
           <p class="tours__title-copy" aria-hidden="true">
             Ближайшие туры
@@ -337,7 +337,7 @@
       </section>
     </div>
     <div data-test="training">
-      <section class="training">
+      <section class="training" id="training">
         <div class="training__title-wrapper">
           <p class="training__title-copy" aria-hidden="true">
             Обучение
@@ -487,7 +487,7 @@
       </section>
     </div>
     <div data-test="about">
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__picture-wrapper">
           <picture>
             <source media="(min-width: 1440px)" width="660" height="498" type="image/webp" srcset="./img/about-desktop@1x.webp 1x, ./img/about-desktop@2x.webp 2x">
@@ -519,7 +519,7 @@
       </section>
     </div>
     <div data-test="reviews">
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="reviews__title-wrapper">
           <p class="reviews__title-copy" aria-hidden="true">Отзывы</p>
           <h2 class="reviews__title">Отзывы</h2>
@@ -680,7 +680,7 @@
       </section>
     </div>
     <div data-test="gallery">
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery__title-wrapper">
           <p class="gallery__title-copy" aria-hidden="true">Фотогалерея</p>
           <h2 class="gallery__title">Фотогалерея</h2>
@@ -825,7 +825,7 @@
     </div>
     <div data-test="footer">
       <footer class="page-footer">
-        <section class="page-footer__contacts">
+        <section class="page-footer__contacts" id="contacts">
           <div class="page-footer__contacts-wrapper">
             <div class="page-footer__title-wrapper">
               <p class="page-footer__title-copy" aria-hidden="true">Контакты</p>

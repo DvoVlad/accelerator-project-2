@@ -247,6 +247,32 @@
     mask-repeat: no-repeat;
     background-color: #2d383f;
   }
+
+  &:hover {
+    border: 1px solid #2d383f;
+  }
+
+  &:focus-visible {
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #0266c1;
+    border: 1px solid #0266c1;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.training__vk--disabled {
+  border: 1px solid rgba(45, 56, 63, 0.3);
+
+  &::before {
+    background-color: rgba(45, 56, 63, 0.3);
+  }
 }
 
 .training__instructor-description p {
@@ -268,6 +294,33 @@
   border: none;
   cursor: pointer;
   padding: 0;
+
+  &:hover {
+    border: 1px solid #1c3374;
+    background-color: #ffffff;
+
+    &::before {
+      background-color: #1c3374;
+    }
+  }
+
+  &:focus-visible {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+
+    &::before {
+      background-color: #1c3374;
+    }
+  }
+
+  &:active {
+    border: 1px solid #1c3374;
+    background-color: #1c3374;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .training__slider-prev::before {
@@ -292,8 +345,14 @@
   background-color: #ffffff;
 }
 
-.training__slider-disabled {
+.training__slider-next.training__slider-disabled,
+.training__slider-prev.training__slider-disabled {
   background-color: #999999;
+  border: 1px solid #999999;
+
+  &::before {
+    background-color: #ffffff;
+  }
 }
 
 .training__learning-wrapper {
