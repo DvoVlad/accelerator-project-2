@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import './menu';
 import './form';
 
-new Swiper('.hero__swiper', {
+const heroSwiper = new Swiper('.hero__swiper', {
   modules: [Pagination],
   // Optional parameters
   loop: true,
@@ -14,7 +14,8 @@ new Swiper('.hero__swiper', {
   // If we need pagination
   pagination: {
     el: '.hero__swiper-pagination',
-    clickable: true
+    clickable: true,
+    bulletElement: 'button'
   },
   breakpointsBase: 'container',
   breakpoints: {
@@ -22,6 +23,25 @@ new Swiper('.hero__swiper', {
       allowTouchMove: false
     }
   },
+  on: {
+    afterInit: function() {
+      const heroButtons = document.querySelectorAll('.hero__button');
+      const activeButton = document.querySelector('.swiper-slide-active').querySelector('.hero__button');
+      for(let i = 0; i < heroButtons.length; i++) {
+        heroButtons[i].setAttribute('tabindex', -1);
+      }
+      activeButton.setAttribute('tabindex', 0);
+    }
+  }
+});
+
+heroSwiper.on('slideChangeTransitionEnd', () => {
+  const heroButtons = document.querySelectorAll('.hero__button');
+  const activeButton = document.querySelector('.swiper-slide-active').querySelector('.hero__button');
+  for(let i = 0; i < heroButtons.length; i++) {
+    heroButtons[i].setAttribute('tabindex', -1);
+  }
+  activeButton.setAttribute('tabindex', 0);
 });
 
 new Swiper('.tours__swiper', {

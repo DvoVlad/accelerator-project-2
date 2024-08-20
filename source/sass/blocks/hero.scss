@@ -40,6 +40,21 @@
   }
 }
 
+.hero__swiper .swiper-pagination-bullet:hover {
+  --swiper-pagination-bullet-inactive-color: #d9d9d9;
+}
+
+.hero__swiper .swiper-pagination-bullet:focus-visible {
+  --swiper-pagination-bullet-inactive-color: transparent;
+
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+.hero__swiper .swiper-pagination-bullet:active {
+  --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.5);
+}
+
 .hero__swiper-pagination .swiper-pagination-bullet {
   border: 1px solid #ffffff;
 }
