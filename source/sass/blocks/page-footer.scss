@@ -248,6 +248,8 @@
   }
 
   @include media-desktop {
+    width: 600px;
+    margin: 0;
     padding-top: 49px;
     padding-bottom: 49px;
   }

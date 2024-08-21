@@ -142,6 +142,7 @@ const initAdvantageSlider = () => {
           slidesPerGroup: 2,
           spaceBetween: 30,
           initialSlide: 1,
+          allowTouchMove: false
         }
       },
     });

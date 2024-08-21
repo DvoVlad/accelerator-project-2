@@ -220,11 +220,21 @@
     padding: 39px 19px;
     margin-bottom: 0;
     min-height: 329px;
+    position: relative;
+    left: -408px;
   }
 }
 
 .advantages__swiper-slide:last-child {
   margin: 0;
+}
+
+.advantages__swiper-slide:nth-last-child(-n + 5) {
+  display: none;
+
+  @include media-desktop {
+    display: block;
+  }
 }
 
 .advantages__swiper-slide h3 {

@@ -6,6 +6,10 @@
   @include media-tablet {
     padding: 20px 0;
   }
+
+  @include media-desktop {
+    padding: 32px 0;
+  }
 }
 
 .page-header__burger {
@@ -98,6 +102,11 @@
 
 .page-header__logo-wrapper {
   grid-area: logo;
+
+  @include media-desktop {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .page-header__logo-wrapper img {
