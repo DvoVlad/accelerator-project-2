@@ -26,10 +26,9 @@
   }
 
   @include media-desktop {
-    padding-top: 10px;
     padding-bottom: 1px;
     width: 1200px;
-    margin: 0 auto 26px;
+    margin: 0 auto 24px; /* 0 auto 26px; */
   }
 }
 

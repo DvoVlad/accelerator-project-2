@@ -195,6 +195,8 @@
 
   @include media-desktop {
     margin-top: 8px;
+    font-size: 12px;
+    line-height: 12px;
   }
 }
 
@@ -295,6 +297,6 @@
 
   @include media-desktop {
     width: 1440px;
-    padding-left: 120px;
+    padding-left: 130px;
   }
 }

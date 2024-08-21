@@ -221,7 +221,7 @@
     margin-bottom: 0;
     min-height: 329px;
     position: relative;
-    left: -408px;
+    left: -410px;
   }
 }
 
@@ -279,6 +279,16 @@
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center center;
+
+  @include media-tablet {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include media-desktop {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .advantages__swiper-slide--expertize::before {
@@ -292,6 +302,16 @@
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center center;
+
+  @include media-tablet {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include media-desktop {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .advantages__swiper-slide--inventary::before {
@@ -305,6 +325,16 @@
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center center;
+
+  @include media-tablet {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include media-desktop {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .advantages__swiper-slide--travels::before {
@@ -318,6 +348,16 @@
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center center;
+
+  @include media-tablet {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include media-desktop {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .advantages__swiper-slide--ecology::before {
@@ -331,6 +371,16 @@
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center center;
+
+  @include media-tablet {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include media-desktop {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .advantages__loop-wrapper {
