@@ -115,6 +115,10 @@
   @include media-tablet {
     margin-top: 25px;
   }
+
+  @include media-desktop {
+    margin-top: 30px;
+  }
 }
 
 .about__text-wrapper > p {
