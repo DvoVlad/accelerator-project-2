@@ -41,7 +41,7 @@
 
   @include media-tablet {
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
 
   @include media-desktop {
@@ -101,19 +101,21 @@
     font-size: 18px;
     line-height: 18px;
     margin-top: 36px;
+    margin-bottom: 10px;
   }
 
   @include media-desktop {
     font-size: 21px;
     line-height: 21px;
     margin-top: 57px;
+    margin-bottom: 15px;
   }
 }
 
 
 .about__text-wrapper > p + h3 {
   @include media-tablet {
-    margin-top: 25px;
+    margin-top: 30px;
   }
 
   @include media-desktop {
