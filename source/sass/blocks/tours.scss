@@ -89,12 +89,14 @@
     margin-bottom: 0;
     font-size: 35px;
     line-height: 35px;
+    position: relative;
+    top: 4px;
   }
 }
 
 .tours__title-copy {
   position: absolute;
-  top: 0;
+  top: 3px;
   font-weight: 800;
   font-size: 26px;
   line-height: 26px;
@@ -105,11 +107,13 @@
   @include media-tablet {
     font-size: 40px;
     line-height: 40px;
+    top: 3px;
   }
 
   @include media-desktop {
     font-size: 55px;
     line-height: 55px;
+    top: 6px;
   }
 }
 
@@ -314,7 +318,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
   padding: 10px;
   color: #2d383f;
   gap: 12px;
@@ -358,6 +362,7 @@
     padding: 10px 230px;
     font-size: 16px;
     line-height: 16px;
+    letter-spacing: 0.8px;
   }
 
   @include media-desktop {

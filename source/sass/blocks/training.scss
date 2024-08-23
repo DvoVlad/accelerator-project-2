@@ -81,6 +81,8 @@
   @include media-desktop {
     font-size: 35px;
     line-height: 35px;
+    position: relative;
+    top: 4px;
   }
 }
 
@@ -97,17 +99,25 @@
   @include media-tablet {
     font-size: 40px;
     line-height: 40px;
+    top: 3px;
   }
 
   @include media-desktop {
     font-size: 55px;
     line-height: 55px;
+    top: 6px;
+  }
+}
+
+.training__br {
+  @include media-desktop {
+    display: none;
   }
 }
 
 .training__text-wrapper {
   width: 290px;
-  margin: 18px auto 15px;
+  margin: 18px auto 25px;
 
   @include media-tablet {
     width: 678px;
@@ -170,6 +180,8 @@
   @include media-desktop {
     font-size: 35px;
     line-height: 35px;
+    position: relative;
+    top: 4px;
   }
 }
 
@@ -198,7 +210,7 @@
 
 .training__swiper-slide {
   min-height: 354px;
-  padding: 15px;
+  padding: 14px;
   box-sizing: border-box;
   border: 1px solid rgba(2, 102, 193, 0.1);
 

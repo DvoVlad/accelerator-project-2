@@ -1,11 +1,13 @@
 .advantages {
   padding-top: 20px;
   padding-bottom: 20px;
+  box-sizing: border-box;
 
   @include media-tablet {
     padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
+    min-height: 1265px;
 
     &::before {
       content: " ";
@@ -31,6 +33,7 @@
   @include media-desktop {
     padding-top: 100px;
     padding-bottom: 100px;
+    min-height: 698px;
 
     &::before {
       display: none;
@@ -38,10 +41,18 @@
   }
 }
 
+.advantages__br {
+  display: none;
+
+  @include media-mobile {
+    display: block;
+  }
+}
+
 .advantages__title-wrapper {
   width: 320px;
   margin: 0 auto 20px;
-  padding-top: 16px;
+  //padding-top: 16px; done!
   padding-bottom: 17px;
   position: relative;
   text-align: center;
@@ -66,12 +77,13 @@
   line-height: 26px;
   position: absolute;
   margin: 0;
-  top: 0;
+  top: -12px;
   opacity: 0.03;
   width: 100%;
   color: #2d383f;
 
   @include media-tablet {
+    top: 4px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -214,6 +226,7 @@
     padding: 29px 19px;
     width: 324px;
     margin-bottom: 0;
+    min-height: 340px;
   }
 
   @include media-desktop {
@@ -273,8 +286,8 @@
   content: " ";
   display: block;
   margin: 0 auto;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #0266c1;
   background-image: url("/__spritemap#sprite-safety-view");
   background-repeat: no-repeat;
@@ -282,8 +295,8 @@
   background-position: center center;
 
   @include media-tablet {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
   }
 
   @include media-desktop {
@@ -296,8 +309,8 @@
   content: " ";
   display: block;
   margin: 0 auto;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #0266c1;
   background-image: url("/__spritemap#sprite-expertize-view");
   background-repeat: no-repeat;
@@ -305,8 +318,8 @@
   background-position: center center;
 
   @include media-tablet {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
   }
 
   @include media-desktop {
@@ -319,8 +332,8 @@
   content: " ";
   display: block;
   margin: 0 auto;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #0266c1;
   background-image: url("/__spritemap#sprite-inventary-view");
   background-repeat: no-repeat;
@@ -328,8 +341,8 @@
   background-position: center center;
 
   @include media-tablet {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
   }
 
   @include media-desktop {
@@ -342,8 +355,8 @@
   content: " ";
   display: block;
   margin: 0 auto;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #0266c1;
   background-image: url("/__spritemap#sprite-travels-view");
   background-repeat: no-repeat;
@@ -351,8 +364,8 @@
   background-position: center center;
 
   @include media-tablet {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
   }
 
   @include media-desktop {
@@ -365,8 +378,8 @@
   content: " ";
   display: block;
   margin: 0 auto;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #0266c1;
   background-image: url("/__spritemap#sprite-ecology-view");
   background-repeat: no-repeat;
@@ -374,8 +387,8 @@
   background-position: center center;
 
   @include media-tablet {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
   }
 
   @include media-desktop {

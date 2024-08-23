@@ -3,6 +3,7 @@
   padding-bottom: 20px;
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @include media-tablet {
     padding-top: 40px;
@@ -10,6 +11,7 @@
     width: 768px;
     display: grid;
     grid-template-columns: 450px 270px;
+    min-height: 742px;
   }
 
   @include media-desktop {
@@ -17,6 +19,7 @@
     padding-bottom: 100px;
     width: 1440px;
     grid-template-columns: 660px 660px;
+    min-height: 698px;
   }
 }
 
@@ -81,11 +84,13 @@
   @include media-tablet {
     font-size: 40px;
     line-height: 40px;
+    top: 5px;
   }
 
   @include media-desktop {
     font-size: 55px;
     line-height: 55px;
+    top: 6px;
   }
 }
 
@@ -101,25 +106,21 @@
     font-size: 18px;
     line-height: 18px;
     margin-top: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   @include media-desktop {
     font-size: 21px;
     line-height: 21px;
     margin-top: 57px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 
 
 .about__text-wrapper > p + h3 {
   @include media-tablet {
-    margin-top: 30px;
-  }
-
-  @include media-desktop {
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
 
