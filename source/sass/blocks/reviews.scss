@@ -148,10 +148,11 @@
 }
 
 .reviews__text-wrapper p {
-  margin-top: 20px;
+  margin-top: 19px;
   margin-bottom: 0;
   font-size: 12px;
   line-height: 18px;
+  color: #2d383f;
 
   @include media-tablet {
     margin-top: 0;
@@ -173,6 +174,8 @@
   line-height: 12px;
   margin-top: 15px;
   margin-bottom: 8px;
+  color: #2d383f;
+
 
   @include media-tablet {
     margin-top: 25px;
@@ -194,6 +197,7 @@
   font-weight: 300;
   margin-top: 8px;
   margin-bottom: 0;
+  color: #2d383f;
 
   @include media-tablet {
     margin-top: 6px;

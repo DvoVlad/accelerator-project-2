@@ -54,21 +54,19 @@
   margin-top: 0;
   margin-bottom: 20px;
   color: #ffffff;
+  position: relative;
+  top: 4px;
 
   @include media-tablet {
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 25px;
-    position: relative;
-    top: 4px;
   }
 
   @include media-desktop {
     font-size: 35px;
     line-height: 35px;
     margin-bottom: 20px;
-    position: relative;
-    top: 4px;
   }
 }
 
