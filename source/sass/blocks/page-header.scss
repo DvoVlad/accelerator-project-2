@@ -88,6 +88,8 @@
     margin-top: 0;
     font-size: 16px;
     line-height: 16px;
+    position: relative;
+    top: 2px;
   }
 
   @include media-desktop {
@@ -187,7 +189,6 @@
   @include media-desktop {
     font-size: 16px;
     line-height: 16px;
-    display: block;
   }
 
   @include media-mobile {

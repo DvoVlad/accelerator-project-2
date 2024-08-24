@@ -48,7 +48,7 @@
     font-size: 35px;
     line-height: 35px;
     position: relative;
-    top: 4px;
+    top: 3px;
   }
 }
 
@@ -91,7 +91,7 @@
   @include media-desktop {
     display: block;
     width: 1200px;
-    margin: 0 auto 46px;
+    margin: 0 auto 45px;
   }
 }
 
@@ -99,6 +99,7 @@
   margin: 0;
   font-size: 12px;
   line-height: 18px;
+  color: #2d383f;
 
   @include media-tablet {
     width: 420px;
