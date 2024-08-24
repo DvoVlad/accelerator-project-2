@@ -82,11 +82,15 @@
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+  color: #2d383f;
+
 
   @include media-tablet {
     font-size: 16px;
     line-height: 24px;
     width: 480px;
+    position: relative;
+    top: 1px;
   }
 
   @include media-desktop {
@@ -137,6 +141,8 @@
     margin-bottom: 0;
 
     &::before {
+      position: relative;
+      left: 1px;
       width: 24px;
       height: 24px;
     }
@@ -182,17 +188,21 @@
   font-size: 14px;
   line-height: 14px;
   grid-area: title;
+  color: #2d383f;
 
   @include media-tablet {
     margin-bottom: 6px;
     font-size: 16px;
     line-height: 16px;
+    position: relative;
+    left: 1px;
   }
 
   @include media-desktop {
     margin-bottom: 8px;
     font-size: 18px;
     line-height: 18px;
+    left: 0;
   }
 }
 
@@ -205,11 +215,14 @@
 
   @include media-tablet {
     line-height: 22px;
+    position: relative;
+    left: 1px;
   }
 
   @include media-desktop {
     font-size: 16px;
     line-height: 24px;
+    left: 0;
   }
 }
 
@@ -222,11 +235,14 @@
 
   @include media-tablet {
     line-height: 22px;
+    position: relative;
+    left: 1px;
   }
 
   @include media-desktop {
     font-size: 16px;
     line-height: 24px;
+    left: 0;
   }
 }
 

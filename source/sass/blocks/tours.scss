@@ -1,9 +1,29 @@
 .tours {
   padding: 20px 0;
+  position: relative;
+
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 141px;
+    height: 595px;
+    background-image:
+      image-set(
+        url("../../img/background-mobile-1@1x.webp") type("image/webp") 1x,
+        url("../../img/background-mobile-1@2x.webp") type("image/webp") 2x,
+        url("../../img/background-mobile-1@1x.png") type("image/png") 1x,
+        url("../../img/background-mobile-1@2x.png") type("image/png") 2x
+      );
+    background-size: 141px 595px;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 
   @include media-tablet {
     padding: 40px 0;
-    position: relative;
 
     &::before {
       content: " ";
@@ -78,11 +98,14 @@
   font-size: 22px;
   line-height: 22px;
   color: #2d383f;
+  position: relative;
+  top: 3px;
 
   @include media-tablet {
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 10px;
+    top: 0;
   }
 
   @include media-desktop {
@@ -318,7 +341,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.47px;
   padding: 10px;
   color: #2d383f;
   gap: 12px;
