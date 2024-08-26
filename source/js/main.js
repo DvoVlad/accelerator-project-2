@@ -100,6 +100,7 @@ new Swiper('.training__swiper', {
 new Swiper('.reviews__swiper', {
   // Navigation arrows
   modules: [Navigation],
+  autoHeight: true,
   navigation: {
     nextEl: '.reviews__slider-next',
     prevEl: '.reviews__slider-prev',

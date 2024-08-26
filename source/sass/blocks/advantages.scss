@@ -52,7 +52,7 @@
 .advantages__title-wrapper {
   width: 320px;
   margin: 0 auto 20px;
-  //padding-top: 16px; done!
+  padding-top: 16px; // !
   padding-bottom: 17px;
   position: relative;
   text-align: center;
@@ -77,7 +77,7 @@
   line-height: 26px;
   position: absolute;
   margin: 0;
-  top: -12px;
+  top: 0;
   opacity: 0.03;
   width: 100%;
   color: #2d383f;
@@ -239,8 +239,8 @@
   }
 }
 
-.advantages__swiper-slide:last-child {
-  margin: 0;
+.swiper-slide.advantages__swiper-slide--last-visible {
+  margin-bottom: 0;
 }
 
 .advantages__swiper-slide:nth-last-child(-n + 5) {
@@ -260,16 +260,18 @@
   color: #2d383f;
 
   @include media-tablet {
-    margin-top: 25px;
+    margin-top: 26px;
+    margin-bottom: 14px;
     font-size: 16px;
     line-height: 16px;
   }
 
   @include media-desktop {
     margin-top: 30px;
+    margin-bottom: 15px;
     font-size: 18px;
     line-height: 18px;
-    right: 0;
+    top: 0;
   }
 }
 

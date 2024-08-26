@@ -50,10 +50,13 @@
   font-size: 22px;
   line-height: 22px;
   color: #2d383f;
+  position: relative;
+  top: 1px;
 
   @include media-tablet {
     font-size: 25px;
     line-height: 25px;
+    top: 0;
   }
 
   @include media-desktop {
