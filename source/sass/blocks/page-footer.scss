@@ -444,6 +444,24 @@
   width: 29px;
   height: 28px;
   border: 1px solid rgba(45, 56, 63, 0.3);
+
+  &:hover {
+    border: 1px solid #2d383f;
+  }
+
+  &:focus-visible {
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #0266c1;
+    border: 1px solid #0266c1;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .page-footer__socials-link--soc-vk::before {
