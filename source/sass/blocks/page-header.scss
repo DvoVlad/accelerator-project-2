@@ -85,11 +85,9 @@
   }
 
   @include media-tablet {
-    margin-top: 0;
+    margin-top: 2px;
     font-size: 16px;
     line-height: 16px;
-    position: relative;
-    top: 2px;
   }
 
   @include media-desktop {
