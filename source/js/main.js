@@ -97,7 +97,7 @@ new Swiper('.training__swiper', {
   },
 });
 
-new Swiper('.reviews__swiper', {
+const reviewsSlider = new Swiper('.reviews__swiper', {
   // Navigation arrows
   modules: [Navigation],
   autoHeight: true,
@@ -195,3 +195,25 @@ const sendButton = document.querySelector('.form__submit');
 sendButton.addEventListener('click', () => {
   form.classList.add('form__send-form--sended');
 });
+
+const reviewsBlocks = document.querySelectorAll('.reviews__text-wrapper');
+
+const observer = new MutationObserver((mutations) => {
+  mutations.forEach(() => {
+    reviewsSlider.update();
+  });
+});
+
+for (let i = 0; i < reviewsBlocks.length; i++) {
+  observer.observe(
+    reviewsBlocks[i],
+    {
+      childList: true,
+      attributes: true,
+      subtree: true,
+      characterData: true,
+      attributeOldValue: true,
+      characterDataOldValue: true
+    }
+  );
+}
