@@ -1,4 +1,3 @@
-// https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
@@ -8,10 +7,7 @@ import './form';
 
 const heroSwiper = new Swiper('.hero__swiper', {
   modules: [Pagination],
-  // Optional parameters
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: '.hero__swiper-pagination',
     clickable: true,
@@ -45,7 +41,6 @@ heroSwiper.on('slideChangeTransitionEnd', () => {
 });
 
 new Swiper('.tours__swiper', {
-  // Navigation arrows
   modules: [Navigation],
   navigation: {
     nextEl: '.tours__slider-next',
@@ -70,7 +65,6 @@ new Swiper('.tours__swiper', {
 });
 
 new Swiper('.training__swiper', {
-  // Navigation arrows
   modules: [Navigation],
   navigation: {
     nextEl: '.training__slider-next',
@@ -98,7 +92,6 @@ new Swiper('.training__swiper', {
 });
 
 const reviewsSlider = new Swiper('.reviews__swiper', {
-  // Navigation arrows
   modules: [Navigation],
   autoHeight: true,
   navigation: {
@@ -128,7 +121,6 @@ let advantagesSlider;
 const initAdvantageSlider = () => {
   if(window.matchMedia('(min-width: 1440px)').matches && advantagesSlider === undefined) {
     advantagesSlider = new Swiper('.advantages__swiper', {
-      // Navigation arrows
       modules: [Navigation],
       loop: true,
       navigation: {
@@ -162,7 +154,6 @@ window.addEventListener('resize', () => {
 });
 
 new Swiper('.gallery__swiper', {
-  // Navigation arrows
   modules: [Navigation],
   loop: true,
   navigation: {
