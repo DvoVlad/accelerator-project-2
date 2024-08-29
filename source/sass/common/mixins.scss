@@ -15,7 +15,7 @@
 }
 
 @mixin media-desktop {
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     @content;
   }
 }
@@ -27,7 +27,7 @@
 }
 
 @mixin media-only-tablet {
-  @media (min-width: $tablet-width) and (max-width: ($desctop-width - 1)) {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     @content;
   }
 }
