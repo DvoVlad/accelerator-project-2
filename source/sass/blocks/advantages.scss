@@ -52,7 +52,7 @@
 .advantages__title-wrapper {
   width: 320px;
   margin: 0 auto 20px;
-  padding-top: 16px; // !
+  padding-top: 16px;
   padding-bottom: 17px;
   position: relative;
   text-align: center;
@@ -121,7 +121,7 @@
   }
 
   @include media-desktop {
-    width: 1200px; /* 2020px */
+    width: 1200px;
     overflow: visible;
   }
 }
