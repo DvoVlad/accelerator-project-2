@@ -14,7 +14,7 @@
   }
 }
 
-.hero__swiper-pagination {
+.swiper-pagination.hero__swiper-pagination.swiper-pagination-horizontal {
   --swiper-pagination-bullet-width: 16px;
   --swiper-pagination-bullet-height: 16px;
   --swiper-pagination-bullet-horizontal-gap: 10px;
@@ -34,10 +34,11 @@
   }
 
   @include media-desktop {
-    --swiper-pagination-bottom: 92px;
+    --swiper-pagination-bottom: 97px;
 
-    display: flex;
-    padding-left: 1212px;
+    text-align: right;
+    box-sizing: border-box;
+    width: 1330px;
   }
 }
 
