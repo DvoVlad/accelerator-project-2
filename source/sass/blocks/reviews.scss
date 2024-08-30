@@ -314,3 +314,12 @@
     padding-left: 130px;
   }
 }
+
+.reviews__swiper-slide--empty {
+  display: none;
+
+  @include media-tablet {
+    display: block;
+    visibility: hidden;
+  }
+}
