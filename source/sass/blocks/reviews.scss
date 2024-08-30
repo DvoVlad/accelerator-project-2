@@ -315,7 +315,7 @@
   }
 }
 
-.reviews__swiper-slide--empty {
+.swiper-slide.reviews__swiper-slide--empty {
   display: none;
 
   @include media-tablet {

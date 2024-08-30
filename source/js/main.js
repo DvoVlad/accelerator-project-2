@@ -102,11 +102,13 @@ const reviewsSlider = new Swiper('.reviews__swiper', {
   breakpointsBase: 'container',
   breakpoints: {
     290: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      allowTouchMove: true
     },
     1160: {
       slidesPerView: 2,
       spaceBetween: 30,
+      allowTouchMove: true
     },
     1520: {
       slidesPerView: 2,
