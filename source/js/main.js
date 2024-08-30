@@ -11,7 +11,10 @@ const heroSwiper = new Swiper('.hero__swiper', {
   pagination: {
     el: '.hero__swiper-pagination',
     clickable: true,
-    bulletElement: 'button'
+    bulletElement: 'button',
+    renderBullet: function (index, className) {
+      return `<button class="${className}" type="button"><span class="visually-hidden">Элемент пагинации ${index + 1}</span></button>`;
+    },
   },
   breakpointsBase: 'container',
   breakpoints: {
