@@ -202,6 +202,7 @@
 
 .swiper-wrapper.advantages__swiper-wrapper {
   flex-wrap: wrap;
+  gap: 15px;
 
   @include media-tablet {
     gap: 30px;
@@ -220,7 +221,6 @@
   text-align: center;
   box-sizing: border-box;
   border: 1px solid rgba(2, 102, 193, 0.1);
-  margin-bottom: 15px;
 
   @include media-tablet {
     padding: 29px 19px;
@@ -237,10 +237,6 @@
     position: relative;
     left: -410px;
   }
-}
-
-.swiper-slide.advantages__swiper-slide--last-visible {
-  margin-bottom: 0;
 }
 
 .swiper-slide.advantages__swiper-slide--clone {

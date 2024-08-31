@@ -192,7 +192,7 @@ sendButton.addEventListener('click', () => {
   form.classList.add('form__send-form--sended');
 });
 
-const reviewsBlocks = document.querySelectorAll('.reviews__text-wrapper');
+/* observer я использовал для того чтобы корректно отрабатывало переполнение в слайдере с параметром autoHeight:true*/
 
 const observer = new MutationObserver((mutations) => {
   mutations.forEach(() => {
@@ -200,9 +200,27 @@ const observer = new MutationObserver((mutations) => {
   });
 });
 
+const reviewsBlocks = document.querySelectorAll('.reviews__text-wrapper');
+
 for (let i = 0; i < reviewsBlocks.length; i++) {
   observer.observe(
     reviewsBlocks[i],
+    {
+      childList: true,
+      attributes: true,
+      subtree: true,
+      characterData: true,
+      attributeOldValue: true,
+      characterDataOldValue: true
+    }
+  );
+}
+
+const reviewsPictureBlocks = document.querySelectorAll('.reviews__picture-wrapper');
+
+for (let i = 0; i < reviewsPictureBlocks.length; i++) {
+  observer.observe(
+    reviewsPictureBlocks[i],
     {
       childList: true,
       attributes: true,
